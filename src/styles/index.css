@@ -56,11 +56,32 @@
 }
 
 .content__blog-preview:hover {
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, .12);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, .12);
 }
 
 .content__blog-preview-heading {
     font-size: 20px;
     color: #f1356d;
     margin-bottom: 8px;
+}
+
+.content__loading,
+.content__error {
+    color: #616161;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.content__loading {
+    animation: loading 6.5s linear infinite;
+}
+
+@keyframes loading {
+    from {
+        font-size: 32px;
+    }
+
+    to {
+        font-size: 10px;
+    }
 }

@@ -1,13 +1,12 @@
+import BlogPreview from './BlogPreview'
+
 const BlogList = props => {
     return (
         <div className='content__blog-list'>
-            {props.children}
+            <h2>{props.title}</h2>
             {props.blogs.map(blog => (
                 <div key={blog.id} className='content__blog-preview'>
-                    <h2 className='content__blog-preview-heading'>
-                        {blog.title}
-                    </h2>
-                    <p>Written by {blog.authour}</p>
+                    <BlogPreview authour={blog.authour} title={blog.title} />
                 </div>
             ))}
         </div>
