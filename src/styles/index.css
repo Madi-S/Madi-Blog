@@ -12,11 +12,11 @@
 /* Navbar Styles */
 
 .navbar {
-    padding: 20px;
     display: flex;
-    align-items: center;
-    min-width: 600px;
+    padding: 20px;
     margin: 0 auto;
+    min-width: 320px;
+    align-items: center;
     border-bottom: 1px solid #e4e4e4;
 }
 
@@ -30,9 +30,9 @@
 }
 
 .navbar__link {
-    text-decoration: none;
-    margin-left: 16px;
     padding: 6px;
+    margin-left: 16px;
+    text-decoration: none;
     transition: color ease-in .3s;
 }
 
@@ -43,14 +43,14 @@
 /* Content Styles */
 
 .content {
+    padding: 20px;
     min-width: 600px;
     margin: 40px auto;
-    padding: 20px;
 }
 
 .content__blog-preview {
-    padding: 10px 16px;
     margin: 20px 0;
+    padding: 10px 16px;
     border-bottom: 1px solid #e4e4e4;
     transition: box-shadow ease-in-out .25s;
 }
