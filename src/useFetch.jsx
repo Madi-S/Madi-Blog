@@ -32,7 +32,7 @@ const useFetch = endpoint => {
                         setError(err.message)
                     }
                 })
-        }, 1000)
+        }, 500)
 
         return () => abortCont.abort()
 

@@ -1,9 +1,11 @@
-const BlogPreview = ({ title, authour }) => {
+import { Link } from 'react-router-dom'
+
+const BlogPreview = ({data}) => {
     return (
-        <>
-            <h2 className='content__blog-preview-heading'>{title}</h2>
-            <p> — "{authour}"</p>
-        </>
+        <Link to={`/blog/${data.id}`}>
+            <h2 className='content__blog-preview-heading'>{data.title}</h2>
+            <p> — "{data.authour}"</p>
+        </Link>
     )
 }
 

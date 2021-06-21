@@ -6,7 +6,7 @@ const BlogList = props => {
             <h2>{props.title}</h2>
             {props.blogs.map(blog => (
                 <div key={blog.id} className='content__blog-preview'>
-                    <BlogPreview authour={blog.authour} title={blog.title} />
+                    <BlogPreview data={blog} />
                 </div>
             ))}
         </div>

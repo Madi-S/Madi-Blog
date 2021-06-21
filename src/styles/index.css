@@ -9,6 +9,10 @@
     color: #333;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Navbar Styles */
 
 .navbar {
@@ -32,7 +36,6 @@
 .navbar__link {
     padding: 6px;
     margin-left: 16px;
-    text-decoration: none;
     transition: color ease-in .3s;
 }
 
@@ -42,11 +45,38 @@
 
 /* Content Styles */
 
+
 .content {
     padding: 20px;
     min-width: 600px;
     margin: 40px auto;
 }
+
+.content__blog-btn {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Blog Styels */
+
+.content__blog {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content__blog-heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #f1356d;
+}
+
+/* Blog Preview Styles */
 
 .content__blog-preview {
     margin: 20px 0;
@@ -64,6 +94,8 @@
     color: #f1356d;
     margin-bottom: 8px;
 }
+
+/* Loading & Error Styles */
 
 .content__loading,
 .content__error {
