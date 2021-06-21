@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+/* Base Styles */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #333;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    min-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.navbar__heading {
+    color: #f1356d;
+    font-family: 'Dancing Script', cursive !important;
+}
+
+.navbar__links {
+    margin-left: auto;
+}
+
+.navbar__link {
+    text-decoration: none;
+    margin-left: 16px;
+    padding: 6px;
+    transition: color ease-in .3s;
+}
+
+.navbar__link:hover {
+    color: #f1356d;
+}
+
+/* Content Styles */
+
+.content {
+    min-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.content__blog-preview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid #e4e4e4;
+    transition: box-shadow ease-in-out .25s;
+}
+
+.content__blog-preview:hover {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, .12);
+}
+
+.content__blog-preview-heading {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 8px;
+}
