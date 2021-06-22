@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const API_URL = 'http://localhost:8000/'
+const API_URL = 'https://my-react-json-server.herokuapp.com/'
 const ABORT_ERROR = 'AbortError'
 
 const useFetch = endpoint => {

@@ -11,7 +11,7 @@ const App = () => {
     const onCreate = data => {
         const id = Math.floor(Math.random() * 1000)
         const blog = {...data, id}
-        return fetch('http://localhost:8000/blogs', {
+        return fetch('https://my-react-json-server.herokuapp.com/blogs', {
             method: 'POST',
             body: JSON.stringify(blog),
             headers: {'Content-Type': 'application/json'}

@@ -8,7 +8,7 @@ const BlogDetails = () => {
     const [blog, isPending, error] = useFetch(`blogs/${id}`)
 
     const handleDelete = () => {
-        fetch(`http://localhost:8000/blogs/${id}`, {
+        fetch(`https://my-react-json-server.herokuapp.com/blogs/${id}`, {
             method: 'DELETE'
         }).then(() => history.push('/'))
     }
