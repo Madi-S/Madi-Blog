@@ -95,6 +95,65 @@ a {
     margin-bottom: 8px;
 }
 
+.content__blog-delete {
+    border: 0;
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #f1356d;
+}
+
+/* Create Blog Styles */
+
+.content__create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content__create label {
+    text-align: left;
+    display: block;
+}
+
+.content__create h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 30px;
+}
+
+.content__create input,
+.content__create textarea,
+.content__create select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+}
+
+.content__create button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 11px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.content__create button:disabled {
+    background: #e95f88;
+    cursor: crosshair;
+}
+
+.content__create-alert {
+    color: #f1356d;
+    text-align: left;
+    font-size: 16px;
+    margin: 20px 12px;
+}
+
 /* Loading & Error Styles */
 
 .content__loading,
